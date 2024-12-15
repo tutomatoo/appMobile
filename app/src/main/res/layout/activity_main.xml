@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main">
+
+    <!-- Header with App Name and Logo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="CampusExpense Manager Logo"
+            android:src="@drawable/thc" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CampusExpense Manager"
+            android:textColor="#6200EE"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to CampusExpense Manager!"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:layout_marginTop="56dp"
+        android:textStyle="italic"/>
+
+    <!-- Expense Categories -->
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Categories"
+        android:textSize="18sp"
+        android:textColor="#212121"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryTitle"
+        android:layout_marginTop="16dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <!-- Categories: Food, Entertainment, Education -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/gh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Food"
+                android:textSize="14sp"
+                android:textColor="#212121"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/entertainment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitEnd"/>
+            <TextView
+                android:text="Entertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#212121"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+            <ImageView
+                android:src="@drawable/th"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"/>
+            <TextView
+                android:text="Education"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#212121"
+                android:gravity="center"/>
+        </LinearLayout>
+    </GridLayout>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/btnAddExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFF"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:layout_below="@id/categoryTitle"
+        android:layout_marginTop="120dp"/>
+
+    <Button
+        android:id="@+id/btnDeleteExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Expense"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFF"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:layout_below="@id/btnAddExpense"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnViewExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Expense"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFF"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:layout_below="@id/btnDeleteExpense"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnUpdateExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Expense"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFF"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:layout_below="@id/btnViewExpenses"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnTotalExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Expense"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFF"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:layout_below="@id/btnUpdateExpense"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFF"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:layout_below="@id/btnTotalExpense"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

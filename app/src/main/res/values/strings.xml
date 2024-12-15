@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Final</string>
+        <array name="expense_categories">
+            <item>Food</item>
+            <item>Transport</item>
+            <item>Entertainment</item>
+        </array>
+
+</resources>

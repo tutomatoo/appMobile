@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Expense Name input field to delete -->
+    <EditText
+        android:id="@+id/edtExpenseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Expense Name to Delete"
+        android:inputType="text" />
+
+    <!-- Button to trigger delete expense -->
+    <Button
+        android:id="@+id/btnDeleteExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Expense" />
+
+    <!-- Button to go back to the main screen -->
+    <Button
+        android:id="@+id/btnBackToMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back "
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

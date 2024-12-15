@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#83BBAD43">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="277dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/aduadu" />
+
+    <!-- Username input field -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:inputType="text" />
+
+    <!-- Password input field -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:inputType="textPassword" />
+
+    <!-- Confirm Password input field -->
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:inputType="textPassword" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EE"
+        android:text="Register"
+        android:textColor="#FFF"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Login link -->
+    <TextView
+        android:id="@+id/loginRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="#6200EE"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+</LinearLayout>

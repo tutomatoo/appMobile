@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title TextView for expenses -->
+    <TextView
+        android:id="@+id/tvViewExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expenses List"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- ListView to display the expenses -->
+    <ListView
+        android:id="@+id/listViewExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/> <!-- Takes remaining space -->
+
+    <!-- TextView to display the total amount -->
+    <TextView
+        android:id="@+id/totalAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: $0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Back Button positioned at the bottom -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="bottom|center_horizontal"/> <!-- Aligns to the bottom -->
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="auto"
+    android:targetSdkVersion="34"> <!-- Updated to target API level 34 -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Final"
+        tools:targetApi="31">
+
+        <!-- Màn hình đăng nhập -->
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Màn hình đăng ký -->
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+
+        <!-- Màn hình chính -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- Màn hình thêm chi tiêu -->
+        <activity
+            android:name=".Add_Expense"
+            android:exported="true" />
+
+        <!-- Màn hình xem chi tiêu -->
+        <activity
+            android:name=".View_Expense"
+            android:exported="true" />
+
+        <!-- Màn hình xóa chi tiêu -->
+        <activity
+            android:name=".Delete_Expense"
+            android:exported="true" />
+
+        <!-- Màn hình cập nhật chi tiêu -->
+        <activity
+            android:name=".Update_Expense"
+            android:exported="true" />
+
+        <!-- Màn hình tổng chi tiêu -->
+        <activity
+            android:name=".Total_Expense"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

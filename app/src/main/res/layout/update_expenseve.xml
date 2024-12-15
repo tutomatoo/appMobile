@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_update_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Expense"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black" />
+
+        <!-- Expense Name Label -->
+        <TextView
+            android:id="@+id/tv_expense_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expense Name"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black" />
+
+        <!-- Expense Name Input -->
+        <EditText
+            android:id="@+id/et_expense_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter expense name"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:inputType="text" />
+
+        <!-- Amount Label -->
+        <TextView
+            android:id="@+id/tv_amount_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black" />
+
+        <!-- Amount Input -->
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter amount"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:inputType="numberDecimal" />
+
+        <!-- Category Label -->
+        <TextView
+            android:id="@+id/tv_category_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black" />
+
+        <!-- Category Dropdown -->
+        <Spinner
+            android:id="@+id/expense_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btn_save_expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+           />
+    </LinearLayout>
+</ScrollView>
